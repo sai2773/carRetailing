@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+<b>Image:</b>
+<%= image_tag @store.image.url, :height=>"200", :width=>"200"%>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @store.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @store.model %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @store.make %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @store.year %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @store.color %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @store.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @store.description %>
+</p>
+
+<p>
+  <strong>Feature1:</strong>
+  <%= @store.feature1 %>
+</p>
+
+<p>
+  <strong>Feature2:</strong>
+  <%= @store.feature2 %>
+</p>
+
+<p>
+  <strong>Feature3:</strong>
+  <%= @store.feature3 %>
+</p>
+
+<p>
+  <strong>Feature4:</strong>
+  <%= @store.feature4 %>
+</p>
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>

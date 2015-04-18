@@ -1,0 +1,17 @@
+
+<%= flash[:notice] %>
+<%= form_for(:admin) do |f| %>
+<div class="field">
+	<%= f.label :name %><br/>
+	<%= f.text_field :name %>
+</div>
+<div class="field">
+   <%=f.label :password %><br/>
+   <%=f.password_field :password %>
+</div>
+<br/>
+<div class="actions">
+	<%= f.submit "Login" %>
+</div>
+<%end%>
+<br/>

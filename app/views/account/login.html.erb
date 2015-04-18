@@ -1,0 +1,18 @@
+<h1>login</h1>
+<%= flash[:notice] %>
+<%= form_for(:user) do |f| %>
+<div class="field">	
+<%= f.label :email %>
+ <%= f.text_field :email %>
+</div>	
+
+<div class="field">
+<%= f.label :password %>
+ <%= f.password_field :password %>
+</div>
+
+<div class="actions">
+	<%= f.submit %>
+</div>
+<% end %>
+<%= link_to "forgot password?" , :controller=>"account", :action=>"forget_password" %>
