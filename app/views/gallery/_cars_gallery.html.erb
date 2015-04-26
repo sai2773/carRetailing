@@ -1,0 +1,18 @@
+<table>
+<tr>
+<% count=0 %>
+<% @cars_gallery.each do |car| %>
+<% if (count % 3) == 0 %>
+</tr>
+<tr>
+	<% end %>
+	<% count+=1 %>
+	<td><%= image_tag car.image.url, :height=>"100",:width=>"100" %><br />
+		Name: <%= car.name %><br />
+		color: <%= car.color %><br />
+		price: <%= car.price %><br />
+		model:<%= car.description %><br />
+	<%= button_to 'Add to cart', line_items_path(:store_id => car.id) %> </td>
+	<% end %>	
+</tr>
+</table>

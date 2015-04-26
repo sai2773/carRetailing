@@ -1,0 +1,6 @@
+<%= render 'cars_gallery' %>
+
+<%= form_for(:search, :url=>"/gallery/search") do |f| %>
+	search <input type="text" name="search">
+	<input type="submit" value="Go">
+	<% end %>

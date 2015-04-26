@@ -44,6 +44,8 @@ GEM
     arel (6.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (4.0.5)
       columnize (= 0.9.0)
@@ -68,6 +70,11 @@ GEM
     jbuilder (2.2.13)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
+    jquery-datatables-rails (3.2.0)
+      actionpack (>= 3.1)
+      jquery-rails
+      railties (>= 3.1)
+      sass-rails
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
@@ -158,9 +165,11 @@ PLATFORMS
 
 DEPENDENCIES
   activemerchant
+  bootstrap-sass (~> 3.2.0.2)
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
+  jquery-datatables-rails
   jquery-rails
   paperclip (~> 3.5.4)
   rails (= 4.2.1)

@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
+  get 'index/checkout'
+
+  get 'index/search'
+
+  get 'gallery/index'
+
+  get 'gallery/search'
+
+  get 'gallery/checkout'
+
   resources :stores
 
   get 'account/index'
@@ -75,4 +87,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get ':controller(/:action(/:id))(.:format)'
+  post ':controller(/:action(/:id))(.:format)'
 end
