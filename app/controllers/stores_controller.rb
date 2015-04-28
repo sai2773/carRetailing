@@ -1,4 +1,5 @@
 class StoresController < ApplicationController
+  layout :false
   before_filter :authorize
   before_action :set_store, only: [:show, :edit, :update, :destroy]
 

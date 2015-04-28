@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'gallery/search'
 
   get 'gallery/checkout'
+  post 'gallery/checkout'
 
   resources :stores
 

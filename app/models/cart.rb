@@ -1,5 +1,5 @@
 class Cart < ActiveRecord::Base
-has_many :line_items, :dependent => :destory
+has_many :line_items
 
 def add_product(store_id)
 	current_item = line_items.find_by_store_id(store_id)

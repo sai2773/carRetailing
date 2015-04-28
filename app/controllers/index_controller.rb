@@ -1,4 +1,5 @@
 class IndexController < ApplicationController
+  layout :false
   def checkout
   end
 

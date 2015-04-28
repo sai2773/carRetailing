@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  layout :false
   before_action :set_cart, only: [:edit, :update, :destroy]
 
   # GET /carts
